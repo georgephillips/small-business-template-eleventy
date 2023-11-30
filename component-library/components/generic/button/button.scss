@@ -1,0 +1,43 @@
+.c-button-temp {
+  all: unset;
+  padding: 1rem 0.75rem;
+  color: inherit;
+  font-size: var(--button);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height);
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  &:focus {
+    outline: 2px solid var(--interaction-color, #2566f2);
+    outline-offset: -2px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    border: 2px solid;
+    &:hover {
+      color: var(--main-background-color);
+      border: 2px solid var(--main-background-color);
+      background: var(--main-text-color);
+      
+      .c-hero-icon__image, .c-hero-icon__svg {
+        --c-hero-icon-color: var(--main-background-color);
+      }
+    }
+  }
+
+  &--secondary {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .c-hero-icon__image, .c-hero-icon__svg {
+      --c-hero-icon-color: var(--main-text-color);
+  }
+}

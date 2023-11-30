@@ -1,0 +1,49 @@
+:root {
+  /* Grid layout */
+  --twelve-column-grid: 1fr repeat(12, calc(min(96px, 7.78%))) 1fr;
+
+  /* Layouts */
+  --desktop-large: 1400px;
+  --desktop: 1279px;
+  --laptop: 1022px;
+  --tablet: 768px;
+  --mobile: 479px;
+
+  /* Type scale */
+  --extra-large-heading: 3.052rem;
+  --large-heading: 2.441rem;
+  --medium-heading: 1.953rem;
+  --small-heading: 1.563rem;
+  --eyebrow-heading: 1rem;
+  --paragraph-large: 1.25rem;
+  --paragraph: 1rem;
+  --paragraph-small: 0.8rem;
+  --label: 0.64rem;
+  --button: 1rem;
+  --line-height: normal;
+  --letter-spacing: 0;
+  --letter-spacing-wide: 0.25rem;
+  --font-weight-headings: 700;
+  --font-weight-body: 400;
+  --font-weight-bold: 700;
+
+  /* User editable theme fonts */
+  --heading-font: Lato;
+  --content-font: Lato;
+  --logo-font: Birthstone Bounce;
+
+  // Red - error
+  --error-color: #bf2323;
+
+  // Blue - interaction
+  --interaction-color: #2566f2;
+
+  // Green - success
+  --success-color: #0d8843;
+
+  --nav-height: 60px;
+}
+
+
+// User controlled variables such as fonts, colors etc. are defined
+// within src/_includes/partials/head/stylesheets.

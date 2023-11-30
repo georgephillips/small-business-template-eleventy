@@ -1,0 +1,18 @@
+.c-form-builder {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__submit-button {
+        text-align: center;
+    }
+
+    .c-hero-icon__image, .c-hero-icon__svg {
+        --c-hero-icon-color: var(--main-text-color);
+    }
+
+    & .error .c-hero-icon__svg {
+        --c-hero-icon-color: var(--error-color);
+    }
+}
